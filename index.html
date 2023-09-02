@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+ 
+
+    
+document.addEventListener("DOMContentLoaded", function() {
+    const menuItems = document.querySelectorAll(".horizontal-menu li a");
+    const contentSections = document.querySelectorAll(".content");
+
+    menuItems.forEach(item => {
+        item.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            const target = this.getAttribute("data-target");
+            const targetContent = document.getElementById(target + "-content");
+
+            if (target === "all") {
+                contentSections.forEach(section => {
+                    section.style.display = "block";
+                    section.style.width = "75%";
+
+                    
+                });
+            } else {
+                contentSections.forEach(section => {
+                    if (section === targetContent) {
+                        section.style.display = "block";
+               
+                    
+                    } else {
+                        section.style.display = "none";
+                    }
+                });
+            }
+        });
+    });
+});
+
+
+
+    </script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+
+
+<div id="header">
+
+
+    <div class="fixs">
+        <div class="new"><p> Guruprasad</p></div>
+        <nav>
+            
+        <ul>
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <div class="light">
+    <div class="header-text">
+         <h1> <div class="light3" ><Strong> <span>HELLO</span> FOLKS....</Strong> </div><br>
+            <strong>M</strong>y name is <span>Guruprasad</span>. I am a <strong> Programmer</strong> from <strong>T</strong>amil Nadu, <strong>I</strong>ndia.</h1>
+            <button>About me </button>
+         </div> 
+         
+         
+        </div>
+        
+    </div>
+
+<div id="about">
+    <div class="light1">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/04.jpg" class=""image alt="Normal Image">
+               
+</div>
+<div class="about-col-2">
+    <h1 class="sub-title">About me</h1>
+    <br>
+    <br>
+    <br>
+    <p> I am a final year undergraduate student of the Department of <span style="color: rgb(223, 144, 26);">Computer Science  and Engineering</span>, Dr.Mahalingam College of Engineering and Technology , Pollachi. <br><br>
+
+        I have experience in utilizing popular framework React.js.
+        
+        <br><br>When I'm not coding ,I enjoy experimenting with new recipes in kitchen or enjoying a good book If you have a project or an idea that you'd like to discuss, I'd love to hear from you! Feel free to reach out to me through the contact information. Let's work together and create something amazing!</p>
+    
+</div>
+  
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="services">
+    <div class="whit">
+    <div class="light5">
+        
+        <h1 class="sub-title light4"><span1>My </span1> works</h1>
+        
+        <ul class="horizontal-menu">
+            <li><a href="#" data-target="all">All</a></li>
+            <li><a href="#" data-target="app">App</a></li>
+            <li><a href="#" data-target="web">Web</a></li>
+            <li><a href="#" data-target="programming">Programming</a></li>
+            <li><a href="#" data-target="blogs">Blogs</a></li>
+        </ul>
+        <div class="services-list">
+        
+    
+        <div id="web-content" class="content">
+        <h2>Web</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, atque consequuntur? Omnis totam minus officia similique consequatur necessitatibus nemo, voluptas nam optio animi nihil perspiciatis earum tenetur maxime itaque eligendi.</p>
+    <a href="#">learn more</a>
+
+    </div>
+    <div id="app-content" class="content">
+        <h2 >App </h2>
+        <img src="https://www.mitsogo.com/wp-content/uploads/2021/01/apps.svg"></img>
+ 
+    </div>
+    
+    <div id="blogs-content" class="content">
+        <h2>Blog</h2>
+       <img src="https://www.mitsogo.com/wp-content/uploads/2021/01/content.svg">
+
+    </div>
+    <div id="Programming-content" class="content">
+        <h2>Hackrank</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, atque consequuntur? Omnis totam minus officia similique consequatur necessitatibus nemo, voluptas nam optio animi nihil perspiciatis earum tenetur maxime itaque eligendi.</p>
+    <a href="#">learn more</a>
+    </div>
+    <div id="programming-content" class="content">
+        <h2>Coding ninja</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, atque consequuntur? Omnis totam minus officia similique consequatur necessitatibus nemo, voluptas nam optio animi nihil perspiciatis earum tenetur maxime itaque eligendi.</p>
+    <a href="#">learn more</a>
+    </div>
+    
+</div>
+<br>
+<br>
+</div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="light1">
+   <div class="light3"> <br><br><h1>CONTACT <span style="color: rgb(230, 134, 17);">ME</span></h1></div>
+    <p>
+
+
+
+
+
+        <div class="light6">
+            <div>
+                <h2 style="font-weight: bold;"> Address</h2>
+                <p>  1/11 Kodingiam (PO),Udumalpet,Tamil Nadu , India.
+                    PinCode : 642122
+                    </p>
+          
+            </div>
+            <div>
+                <h2>Email me</h2>
+                
+            <a href="#"><p> guruprasadmariappan@gmail.com</p></a>
+            </div>
+            <div>
+                <h2>Phone</h2>
+                <p>  +91(0) 8148471605<br>
+                    +91(0) 6369248823</p>
+           
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+
+
+
+       
+        
+        
+        
+        
+        
+       
+        
+        
+        
+        
+        
+       
+<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2779.670755126678!2d77.13272317481156!3d10.550476749150677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8326edbccc18d%3A0xc6bb993692cc7059!2sH42M%2B7FQ%2C%20Coimbatore%2C%20Tamil%20Nadu%20642132!5e0!3m2!1sen!2sin!4v1688393889199!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0"></iframe>
+
+    </div>
+</div>
+
+
+
+<button class="steel-button">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+.afterlight{
+    display: inline-block;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+  
+   background-image: url(images/07.jpg);
+   
+    background-color: #ffffff;
+    background-size: 50% 100%  ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 106%;
+   
+}
+
+
+
+
+nav{
+    display: inline-flex;
+    
+    justify-content: flex-end;
+   flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 15px;
+
+    
+}
+nav ul li a{
+    color: #000000a1;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+nav ul li a:hover{
+    color: #000000;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 26.7%;
+    margin-bottom: -40%;
+    padding-top: 20%;
+    padding-bottom: 26.5%;
+    margin-right: 30%;
+    display: inline-block;
+    
+   
+}
+.header-text h1{
+    font-size: 25px;
+    font-weight: lighter;
+font-family: 'Times New Roman', Times, serif;    
+color: #000000b5;
+}
+.header-text h1 span{
+    color: #000000;
+    font-size: 30px;
+
+}
+.header-text h1 strong{
+    font-weight: 600;
+}
+
+#about{
+    padding: 80px 0;
+    color: #fff;
+    background-color: hwb(0 100% 0%);
+    margin-bottom: 0%;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1{
+    flex-basis: 37%;
+
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    /*color: #0ff0c3;*/
+    font-family: Muli,sans-serif;
+}
+
+
+.tab-titles{
+    display: flex;
+    margin: 20px 30px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+   background: #eba009;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.light{
+    margin-top: -20%;
+    background-color: none;
+   margin-bottom: 40%;
+   padding-left: 25%;
+}
+.light1{
+    padding: 0px 15% ;
+    background-color: #fefeff00;
+    color: #080808d1;
+
+}
+
+.light3{
+   padding-left: 30%;
+}
+
+#services{
+    padding: 100px 0;
+    background-image: url(images/09.png);
+    background-size: 70% 100%  ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
+  
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+  
+  
+}
+.services-list div{
+   /* background: #e0e0e079;*/
+padding: 20px;
+font-size: 10px;
+font-weight: 300;
+border-radius: 300;
+transition: transform 0.5s;
+border-radius: 0%;
+
+border-style: solid;
+border-color: #eeececb7;
+
+background-position: center;
+width : 100%;
+}
+.services-list codeforces{
+
+ width: 100%;
+
+}
+.services-list div img{
+    /*width: 10%;*/
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #000000;
+
+}
+.services-list div a{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.services-list div p {
+    color: #000000;
+}
+.services{
+    padding-bottom: 40%;
+    margin-bottom: 50%;
+   
+}
+.services-list div:hover{
+
+    transform: translate(-20px) ;
+    border-color: #aabdbe;
+    box-shadow: 0px 0px 108px #60645abf ;
+   
+    
+}
+.whit{
+    background-color: #ffffff;
+}
+.light4{
+    padding-left: 40%;
+}
+.light5{
+    padding: 10px 15% ;
+  background-color: rgba(255, 255, 255, 0.779);
+    background-repeat: no-repeat;
+    background-size: 1500px 1000px;
+    color: #ffffff;
+
+}
+.light5 img{
+    margin-left: 40%;
+    
+    margin-top:5%;
+}
+.light6{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    background: #ffffff;
+padding: 40px;
+font-size: 13px;
+font-weight: 300;
+border-radius: 300;
+transition: transform 0.5s;
+
+
+
+
+}
+.light6 div h2{
+    font-size: 15px;
+    font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 17%;
+    
+
+}
+.horizontal-menu {
+    list-style: none;
+    display: flex;
+   /* You can adjust this to change the alignment */
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.horizontal-menu li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: right;
+    margin-top: 10%;
+}
+
+.horizontal-menu li:not(:last-child) {
+    margin-right: 10px; /* Adjust the spacing between items */
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    color: blue; /* Change this color to your preferred color */
+}
+
+.horizontal-menu li::after {
+    content: "|";
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.975); /* Change this color to your preferred separator color */
+}
+
+.content.displayed {
+    display: inline-block;
+    width: 10%; /* Let content determine width when displayed */
+    background-image: none;
+    box-shadow:0px 0px 100px  #00e6dc;
+
+}
+
+.header-text button{
+  
+    background-color: #00ffb9; 
+    margin-left: 40%;
+    padding: 1%;
+    margin-top: 2%;
+   
+}
+.light4 span1{
+    color: #ffffff;
+   }
+   .new p {
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 30%;
+    display: inline-block;
+    font-family: Muli,sans-serif;
+   }
+
+
+
+.via video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 3;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:100px)
+{
+.horizontal-menu{
+    display: none;
+}
+}.new{
+    display: none;
+    font-weight: 300px;
+}
+.new p {
+font-weight: bold;
+
+}
+
+
+.about-col-1 img {
+    width: 44%;
+    margin-top: 40%;
+    margin-left: 5%;
+    border-radius: 55px;
+    display: inline-block;
+    transition: transform 0.3s ;
+    transform-origin: center;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:200px ) and (max-width: 450px) {
+    /* Your CSS rules for phone screens */
+  
+    nav ul li{
+        display: none;
+        list-style: none;
+        margin: 10px 5px ;
+    }
+
+    .sub-title{
+        display: flex;
+        margin-top: -100px;
+        margin-bottom: 70px;
+        margin-left: -80px;
+    }
+    .about-col-2 p {
+        margin-right: 0%;
+        margin-top: 60%;
+        margin-left: -60%;
+        
+    }
+        .about-col-1 img{
+            width: 100%;
+            margin-top: 0%;
+            margin-left: 40%;
+            
+            border-radius: 15px;
+            display: inline-block;
+            }
+            
+            
+            .light{
+                margin-top: -22%;
+                padding-top: 0%;
+                padding-right: 10%;
+                height: 100%;
+                padding-left: 10%;
+                
+                
+            }
+            #header{
+                background-size: cover;
+               
+            }
+            .new{
+                display: none;
+            }
+        .light3{
+            padding-left: 10%;
+            padding-top: 50%;
+        }
+        .light button{
+            display: none;
+            margin-left: 17%;
+margin-top: 10%;
+width: 30%;
+height: 40
+
+        }
+        .new{
+            display: none;
+
+        }
+        
+        
+    
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+    /* Your CSS rules for phone screens */
+  .container{
+    display: none;
+  }
+    nav ul li{
+        display: none;
+        list-style: none;
+        margin: 10px 20px ;
+        font-family: arial,sans-serif;
+        
+    }
+    .new{
+        display: none;
+    }
+    .light5{
+        background-image: none;
+    }
+    .about-col-1 img{
+        width: 75%;
+        margin-top: 75%;
+        margin-left: 10%;
+        border-radius: 15px;
+        display: inline-block;
+        }
+       .about-col-1 img:hover{
+        border: 2px solid #00ffbb; 
+        border-width: 20;
+       }
+       .about-col-2 p {
+        margin-bottom: 10px; /* Adjust the margin as needed */
+    }
+
+
+    .light{
+        margin-top: -22%;
+        padding-top: 0%;
+        padding-right: 10%;
+        height: 100%;
+        padding-left: 10%;
+        
+        
+    }
+    #header{
+        background-size: cover;
+        
+    }
+    .light3{
+        padding-left: 15%;
+        padding-top: 33%;
+    }
+    .light button{
+        margin-left: 17%;
+margin-top: 10%;
+width: 25%;
+height: 40
+
+    }
+      
+       
+}
+
+/* Styles for Half Laptop Screens */
+@media (min-width: 768px) and (max-width: 1000px) {
+    /* Your CSS rules for half laptop screens */
+     nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+        
+       
+        margin-left: 0%;
+       
+        
+    }
+ 
+    .about-col-1 img{
+        width: 55%;
+        margin-top: 55%;
+        /*align-items: center;*/
+        margin-left: 5%;
+        border-radius: 15px;
+        display: inline-block;
+        }
+        .about-col-1 img:hover{
+            border: 2px solid #ff0000; 
+            border-width: 20;
+           }
+           .light{
+            margin-top: -21.5%;
+            padding-top: 0%;
+            padding-right: 10%;
+            height: 92%;
+            padding-left: 10%;
+            
+            
+        }
+        #header{
+            background-size: cover;
+            
+        }
+       
+        
+        .light button{
+            margin-left: 25%;
+margin-top: 10%;
+width: 20%;
+height: 40
+
+        }
+        .new p {
+            display: inline;
+            font-weight: 300px;
+            
+                           }
+  
+}
+
+@media  (min-width: 1001px) and (max-width: 1199px){
+   
+    nav ul li {
+        display: inline-block;
+  
+        list-style: none;
+  
+        margin: 10px;
+       
+        margin-left: 0%;
+      }
+      .light{
+        margin-top: -21.5%;
+        padding-top: 0%;
+        padding-right: 10%;
+        height: 92%;
+        padding-left: 10%;
+        
+        
+    }
+    #header{
+        background-size: cover;
+        
+    }
+     .light button{
+            margin-left: 27%;
+margin-top: 10%;
+width: 25%;
+height: 40
+
+        }
+        .new{
+            display: inline;
+            color: #000000;
+               }
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
+    /* Your CSS rules for three-fourths laptop screens */
+.header-text {
+    margin-top: 26.7%;
+    margin-bottom: -40%;
+    padding-top: 15%;
+    padding-bottom: 26.5%;
+    margin-right: 65%;
+    margin-left: -25%;
+    display: inline-block;
+    
+}
+
+    .about-col-1 {
+     
+      width: 50px; /* Adjust container size */
+      height: 50px;
+    }
+  
+    .about-col-1 img {
+      width: 44%;
+      margin-top: 25%;
+      margin-left: 5%;
+      border-radius: 55px;
+      display: inline-block;
+      transition: transform 0.3s ;
+      transform-origin: center;
+      
+    }
+ 
+    .light{
+        padding-right: 0%;
+    }
+    .light button{
+       /* background: linear-gradient(to right, #FF5733, #FFC300); */
+        background: linear-gradient(to right, #00ffb9,#00e6dc);
+        margin-left: 27%;
+margin-top: 10%;
+width: 25%;
+height: 40
+
+    }
+  
+  .light6{
+    background-color: white;
+    border: #f2f4f7;
+  }
+     h2 {
+        font-weight: bold;
+    }
+    .about-col-1 {
+        display: inline-block;
+        position: relative;
+      }
+      
+ 
+      
+      .about-col-1 img:hover  {
+      /*  transform: scale(1.1);*/
+        /* Replace with the path to your alternate image */
+        content: url('images/me.jpg');
+        box-shadow: 0px 0px 100px rgb(239, 227, 4);
+        height: 200px;
+      }
+      
+      nav{
+        display: inline-flex;
+        
+        justify-content: flex-end;
+       flex-wrap: wrap;
+      /* background-color: white;*/
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 15px 20px ;
+        
+        
+    }
+    nav ul li:first-child{
+        margin-left: 60px;
+    }
+    nav ul li a{
+        color: #000000bc;
+        text-decoration: none;
+        font-size: bold;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #000000;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.7s;
+    }
+    nav ul li a:hover{
+        color: #000000;
+        
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .new{
+        display: inline;
+        width: 30%;
+    }
+      
+    .new p {
+        margin-top: 2%;
+        margin-left: 6%;
+        margin-right: 12%;
+        width: 30%;
+        font-size: 30px;
+        display: inline-block;
+       }
+  
+    
+  
+    
+    
+      
+  }
+
+
+/* Styles for Three-Fourths Laptop Screens */
+
+  
